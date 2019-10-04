@@ -85,6 +85,10 @@
     .contacts-form__form{
         padding: 15px;
     }
+    .btn-subtim{
+        width: auto;
+        padding: 0 15px;
+    }
     .footer,
     .header{
         padding: 10px 15px;
