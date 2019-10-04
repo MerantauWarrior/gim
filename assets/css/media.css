@@ -92,4 +92,7 @@
     .footer .navigation{
         display: none;
     }
+    .socials{
+        order: 2;
+    }
 }
