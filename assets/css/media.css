@@ -56,8 +56,8 @@
     .services__items{
         margin-top: 50px;
     }
-    .services-item{
-        margin: 0 0 30px 0;
+    .services__items-single{
+        max-width: 100%;
     }
     .services-item__description{
         font-size: 16px;
@@ -91,7 +91,7 @@
     }
     .footer,
     .header{
-        padding: 10px 15px;
+        padding: 10px 0;
     }
     .footer .navigation{
         display: none;
