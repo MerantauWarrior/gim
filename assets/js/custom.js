@@ -10,6 +10,10 @@ document.addEventListener('DOMContentLoaded', function(){
         this.closest('.doc-sidebar__item').classList.toggle('doc-sidebar__item_opened');
       })
     });
+      document.getElementsByClassName('doc-info__mobile-menu')[0].addEventListener('click', function () {
+        this.classList.toggle('doc-info__mobile-menu_opened');
+        document.getElementsByClassName('doc-sidebar')[0].classList.toggle('doc-sidebar_opened');
+      })
   }
 
 //  mobile menu
