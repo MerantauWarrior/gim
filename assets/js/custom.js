@@ -2,10 +2,23 @@
 
 document.addEventListener('DOMContentLoaded', function(){
 
+//  documentation menu
+  if(document.getElementsByClassName('doc-sidebar__arrow').length > 0){
+    document.querySelectorAll('.doc-sidebar__arrow').forEach(function (arrow) {
+      arrow.addEventListener('click', function (e) {
+        e.preventDefault();
+        this.closest('.doc-sidebar__item').classList.toggle('doc-sidebar__item_opened');
+      })
+    });
+  }
+
 //  mobile menu
-  document.getElementsByClassName('navigation-mobile')[0].addEventListener('click', function () {
-    this.parentElement.querySelector('.menu').classList.toggle('menu_open');
-  });
+  if(document.getElementsByClassName('navigation-mobile').length > 0){
+    document.getElementsByClassName('navigation-mobile')[0].addEventListener('click', function () {
+      this.parentElement.querySelector('.menu').classList.toggle('menu_open');
+    });
+  }
+
 //  faqs
   document.querySelectorAll('.faqs-item__btn').forEach(function (btn) {
     btn.addEventListener('click', function () {
@@ -13,7 +26,5 @@ document.addEventListener('DOMContentLoaded', function(){
       this.innerText === '+' ? this.innerText = '-' : this.innerText = '+';
     })
   });
-
-
 
 });
